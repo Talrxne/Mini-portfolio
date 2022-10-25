@@ -1,0 +1,273 @@
+body {
+  background-image: url(../images/win\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'VT323', monospace;
+  color: #F3F3F3;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(118, 144, 170, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(201, 197, 197, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(7, 13, 18, 0.01);
+  width: 500px;
+  border: 2px solid #4bdff1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 60px #cbd8da;
+  height: 650px;
+}
+
+.card .my-infos {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .my-infos img {
+  border-radius: 20%;
+  border: 4px solid #4bdff1;
+  width: 150px;
+  height: 250px;
+}
+
+.card .my-infos .name {
+  font-size: 25px;
+  font-family: 'VT323', monospace;
+}
+
+.card .my-infos .office {
+  font-size: 20px;
+  color: #B8BBC5;
+}
+
+.card .content {
+
+  margin-top: 15px;
+}
+
+.card .tabs {
+  display: flex;
+}
+
+.card .tabs .tab {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .tabs img {
+  width: 39px;
+}
+
+.card .tabs .tab.selected {
+  background-color: #262626;
+}
+
+.card .infos-tabs {
+  background-color: #262626;
+}
+
+.card .tabs .tab:hover {
+  background: #414141;
+}
+
+.infos-tabs .info {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.infos-tabs .info.selected {
+  display: block;
+}
+
+.infos-tabs .sub-title {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.infos-tabs .description {
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.infos-tabs .description span {
+  color: #4bdff1;
+}
+
+.infos-tabs .description a {
+  color: #4bdff1;
+}
+
+.infos-tabs .description a:hover {
+  color: #4bdff1;
+  transition: color 0.3s ease-in-out;
+}
+
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.my-projects li a {
+  width: 250px;
+  color: #F3F3F3;
+  padding: 11.7px;
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.my-projects .project {
+  background-color: #00444e;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.my-projects .project:hover {
+  background-color: #32c4d5;
+}
+
+.my-projects .project img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-left: 83%;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.social-networks li a {
+  width: 250px;
+  display: block;
+  color: #F3F3F3;
+  text-align: center;
+  padding: 9.2px;
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-networks .curriculo {
+  background-color: #005c3f;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 23.8%;
+}
+
+.social-networks .curriculo:hover {
+  background-color: #06C185;
+}
+
+.social-networks .curriculo img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-networks .linkedin {
+  background-color: #003c5a;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25.7%;
+}
+
+.social-networks .linkedin:hover {
+  background-color: #268ec3;
+}
+
+.social-networks .linkedin img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-networks .github {
+  background-color: #3e3e3e;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 28.9%;
+}
+
+.social-networks .github:hover {
+  background-color: #8d8d8d;
+}
+
+.social-networks .github img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-networks .instagram {
+  background-color: #6c205f;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 23.8%;
+}
+
+.social-networks .instagram:hover {
+  background-color: #ee3acf;
+}
+
+.social-networks .instagram img {
+  width: 25px;
+  height: 25px;
+}
+
+/**body .audio  {
+  display: flex;
+  justify-content: center;
+  border: 5px solid #262626;
+}
+
+audio::-webkit-media-controls-timeline { 
+  display:flex;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #262626;
+  
+}
+
+.audio {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}**/
